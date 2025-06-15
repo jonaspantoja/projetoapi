@@ -36,7 +36,7 @@ with open(nome_arquivo, mode='w', newline='', encoding='utf-8') as arquivo:
         # Obtém o preço de fechamento, arredonda para 2 casas decimais
         preco_fechamento_numerico = round(ultimo_registro['Close'], 2)
         
-        # --- AQUI ESTÁ A MUDANÇA ---
+    
         # Converte o número para string e substitui o ponto por vírgula
         preco_fechamento_formatado = str(preco_fechamento_numerico).replace('.', ',')
 
